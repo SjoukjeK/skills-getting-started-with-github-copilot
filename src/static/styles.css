@@ -80,16 +80,37 @@ section h3 {
   border-top: 1px solid #ddd;
 }
 
+
 .participants-list {
   margin-top: 8px;
-  margin-left: 20px;
-  list-style-type: disc;
+  margin-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
+
 
 .participants-list li {
   margin-bottom: 5px;
   color: #555;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 6px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+.delete-participant:hover {
+  background: #ffeaea;
 }
 
 .form-group {
